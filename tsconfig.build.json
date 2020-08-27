@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@kwilio/*": ["./node_modules/@kwilio/*/src"],
+      "*": ["node_modules", "packages"]
+    },
+    "types": ["node"]
+  },
+  "exclude": ["**/*.story.*", "**/*.test.*", "dist"],
+  "include": ["./src"]
+}
